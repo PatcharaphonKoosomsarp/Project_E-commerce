@@ -1,131 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAYASHOP</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAYASHOP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-    <section>
-        <header>
-            <a href="index.html" class="logo">GAYA<span>SHOP</span></a>
-            <div class="go-right">
-                <div class="dropdown">
-                    <button class="dropbtn">Menu Products
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="product_1.html">Home Decoration</a>
-                      <a href="product_2.html">Gaming Gear</a>
-                      <a href="product_3.html">Perfume</a>
+  <section>
+    <header>
+      <a href="index.html" class="logo">GAYA<span>SHOP</span></a>
+      <div class="go-right">
+        <div class="dropdown">
+          <button class="dropbtn">Menu Products
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="product_1.html">Home Decoration</a>
+            <a href="product_2.html">Gaming Gear</a>
+            <a href="product_3.html">Perfume</a>
+          </div>
+        </div>
+        <div class="profile-cart">
+          <a href="cart.html" class="fas fa-cart-shopping"></a>
+          <div class="cartcount">
+            2
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="texts">
+      <h1>SHOPPING FUN</h1>
+    </div>
+
+    <div class="background_image">
+      <img src="image/shopping.jpg">
+    </div>
+  </section>
+
+  <div class="about">
+    <hr>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h2>Payment Page</h2>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="john@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="New York">
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="NY">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
                   </div>
                 </div>
-                <div class="profile-cart">
-                  <a href="cart.html" class="fas fa-cart-shopping"></a>
-                  <div class="cartcount">
-                      2
+              </div>
+
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018">
                   </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                  </div>
+                </div>
               </div>
-            </div>
-        </header>
-        <div class="texts">
-          <h1>SHOPPING FUN</h1>
-      </div>
 
-      <div class="background_image">
-          <img src="image/shopping.jpg">
-      </div>
-    </section>
-    
-    <div class="about">
-        <hr>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <h2>Payment Page</h2>
-<div class="row">
-  <div class="col-75">
-    <div class="container">
-      <form action="/action_page.php">
-      
-        <div class="row">
-          <div class="col-50">
-            <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="New York">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
-              </div>
-              <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
-              </div>
             </div>
-          </div>
-
-          <div class="col-50">
-            <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-              </div>
-            </div>
-          </div>
-          
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </form>
         </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <input type="submit" value="Continue to checkout" class="btn">
-      </form>
-    </div>
-  </div>
-</div>
-        
-    </div>
-    <hr>
-    <!--fotter-->
-
-    <footer class="footer">
-      <div class="footer_col">
-          <h4>Follower us</h4>
-          <div class="social">
-              <a href="#"><img src="image/facebook.png"></a>
-              <a href="#"><img src="image/Googlell.png"></a>
-              <a href="#"><img src="image/twitter.png"></a>
-              <a href="#"><img src="image/instagram.png"></a>
-          </div>      
       </div>
+    </div>
+
+  </div>
+  <hr>
+  <!--fotter-->
+
+  <footer class="footer">
+    <div class="footer_col">
+        <h4>Group Members</h4>
+        <p><strong>Name</strong> <u>Patcharaphon Koosomsarp</u>
+            <br><strong>Student ID</strong> <u>6506022620095</u>
+            <br><strong>Field of Study</strong> <u>INE</u>
+            <br><strong>E-mail</strong> <u>s6506022620095@email.kmutnb.ac.th</u>
+        </p>
+    </div>
+    <div class="footer_col">
+        <h4>Group Members</h4>
+        <p><strong>Name</strong> <u>Netiya Phurithatsiri</u>
+            <br><strong>Student ID</strong> <u>6506022630015</u>
+            <br><strong>Field of Study</strong> <u>INE</u>
+            <br><strong>E-mail</strong> <u>s6506022630015@email.kmutnb.ac.th</u>
+        </p>
+    </div>
+    <div class="footer_col">
+        <h4>Group Members</h4>
+        <p><strong>Name</strong> <u>Phatkavee Keeratitragool</u>
+            <br><strong>Student ID</strong> <u>6506022630031</u>
+            <br><strong>Field of Study</strong> <u>INE</u>
+            <br><strong>E-mail</strong> <u>s6506022630031@email.kmutnb.ac.th</u>
+        </p>
+    </div>
 </footer>
-    
+
 </body>
+
 </html>
