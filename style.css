@@ -155,53 +155,20 @@ section .btn p {
 
 .about {
   width: 100%;
-  height: vh;
   padding: 50px;
-}
-
-.about .box {
-  width: 100%;
-  padding: 60px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about .box .card {
-  width: 170px;
-  height: auto;
-  padding: 5px 10px;
-  margin: 0 15px;
-  background: gainsboro;
-  border: 1px solid gainsboro;
-  cursor: pointer;
-  z-index: 1;
-  transition: 0.3s;
-}
-
-.about .box .card:hover {
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
-  transform: scale(1.1);
-  border-radius: 5px;
-}
-
-.about .box .card img {
-  width: 150px;
 }
 
 .about hr {
   height: 2px;
-  background: #d98ca5;
   border-radius: 5px;
   margin: 30px 110px;
 }
 
-.about .recommend h1 {
+.about .recommend h1{
   font-size: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 35px 0;
 }
 
 .about .recommend p {
@@ -231,19 +198,6 @@ section .btn p {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
-.about .recommend_box .recommend_card2 {
-  background: #9d9d9d;
-  width: 350px;
-  padding: 25px 25px;
-  text-align: center;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.about .recommend_box .recommend_card2:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-}
-
 .about .recommend .recommend_box img {
   width: 250px;
   cursor: pointer;
@@ -257,19 +211,18 @@ section .btn p {
 .about .recommend_box .recommend_card h1 {
   font-size: 35px;
   color: gainsboro;
-  margin: 15px 0;
 }
 
 .about .recommend_box .recommend_card p {
   color: white;
-  margin: 25px 0;
+  
   font-size: 17px;
 }
 
 .about .recommend_box .recommend_card .btn {
   text-decoration: none;
   color: white;
-  padding: 10px 30px;
+ 
   background: #194569;
 }
 
@@ -442,31 +395,8 @@ body {
 }
 
 .row {
-  display: -ms-flexbox;
-  /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
-  flex-wrap: wrap;
   margin: 0 -16px;
-}
-
-.col-25 {
-  -ms-flex: 25%;
-  /* IE10 */
-  flex: 25%;
-}
-
-.col-50 {
-  -ms-flex: 50%;
-  /* IE10 */
-  flex: 50%;
-}
-
-.col-75 {
-  -ms-flex: 75%;
-  /* IE10 */
-  flex: 75%;
 }
 
 .col-25,
